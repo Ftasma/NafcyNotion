@@ -23,7 +23,7 @@ const Menu = ({
     documentId
 }:MenuProps) => {
     const router = useRouter()
-    const user = useUser()
+    const {user} = useUser()
 
     const archive = useMutation(api.documents.archive)
     const onArchive= ()=>{
@@ -50,7 +50,7 @@ const Menu = ({
         </DropdownMenuItem>
         <DropdownMenuSeparator/>
         <div className=" text-xs text-muted-foreground p-2">
-            Last edited by: {user?.user?.fullName}
+            Last edited by: {user?.fullName}
         </div>
     </DropdownMenuContent>
  </DropdownMenu> 
