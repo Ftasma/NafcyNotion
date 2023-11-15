@@ -57,9 +57,9 @@ const Menu = ({
 
   )
 }
-Menu.Skeleton =()=>{
-    return(
-        <Skeleton className=" h-10 w-10"/>
+Menu.Skeleton = function MenuSkeleton(){
+    return (
+        <Skeleton className=" w-10 h-10"/>
     )
 }
 export default Menu
